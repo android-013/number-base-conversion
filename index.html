@@ -9,42 +9,33 @@
 <body>
     <div class="container">
         <h1>Number Converter</h1>
-        <button id="darkModeToggle">Toggle Dark Mode</button>
-        <div class="input-group">
-            <label>Binary</label>
-            <div class="input-box">
+        <div class="converter">
+            <div class="input-group">
+                <label for="binary">Binary</label>
                 <input type="text" id="binary" placeholder="Enter binary">
-                <button class="copy-btn" onclick="copyToClipboard('binary')">📋</button>
+                <button onclick="copyText('binary')">Copy</button>
+                <small id="binary-error"></small>
             </div>
-            <p class="error-message" id="binaryError"></p>
-        </div>
-
-        <div class="input-group">
-            <label>Octal</label>
-            <div class="input-box">
+            <div class="input-group">
+                <label for="octal">Octal</label>
                 <input type="text" id="octal" placeholder="Enter octal">
-                <button class="copy-btn" onclick="copyToClipboard('octal')">📋</button>
+                <button onclick="copyText('octal')">Copy</button>
+                <small id="octal-error"></small>
             </div>
-            <p class="error-message" id="octalError"></p>
-        </div>
-
-        <div class="input-group">
-            <label>Decimal</label>
-            <div class="input-box">
+            <div class="input-group">
+                <label for="decimal">Decimal</label>
                 <input type="text" id="decimal" placeholder="Enter decimal">
-                <button class="copy-btn" onclick="copyToClipboard('decimal')">📋</button>
+                <button onclick="copyText('decimal')">Copy</button>
+                <small id="decimal-error"></small>
             </div>
-            <p class="error-message" id="decimalError"></p>
-        </div>
-
-        <div class="input-group">
-            <label>Hexadecimal</label>
-            <div class="input-box">
+            <div class="input-group">
+                <label for="hexadecimal">Hexadecimal</label>
                 <input type="text" id="hexadecimal" placeholder="Enter hexadecimal">
-                <button class="copy-btn" onclick="copyToClipboard('hexadecimal')">📋</button>
+                <button onclick="copyText('hexadecimal')">Copy</button>
+                <small id="hexadecimal-error"></small>
             </div>
-            <p class="error-message" id="hexadecimalError"></p>
         </div>
+        <button id="toggle-theme">Toggle Dark Mode</button>
     </div>
     <script src="script.js"></script>
 </body>

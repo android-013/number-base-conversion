@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Converter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Number Converter</h1>
+        <button id="darkModeToggle">Toggle Dark Mode</button>
+        <div class="input-group">
+            <label>Binary</label>
+            <div class="input-box">
+                <input type="text" id="binary" placeholder="Enter binary">
+                <button class="copy-btn" onclick="copyToClipboard('binary')">📋</button>
+            </div>
+            <p class="error-message" id="binaryError"></p>
+        </div>
+
+        <div class="input-group">
+            <label>Octal</label>
+            <div class="input-box">
+                <input type="text" id="octal" placeholder="Enter octal">
+                <button class="copy-btn" onclick="copyToClipboard('octal')">📋</button>
+            </div>
+            <p class="error-message" id="octalError"></p>
+        </div>
+
+        <div class="input-group">
+            <label>Decimal</label>
+            <div class="input-box">
+                <input type="text" id="decimal" placeholder="Enter decimal">
+                <button class="copy-btn" onclick="copyToClipboard('decimal')">📋</button>
+            </div>
+            <p class="error-message" id="decimalError"></p>
+        </div>
+
+        <div class="input-group">
+            <label>Hexadecimal</label>
+            <div class="input-box">
+                <input type="text" id="hexadecimal" placeholder="Enter hexadecimal">
+                <button class="copy-btn" onclick="copyToClipboard('hexadecimal')">📋</button>
+            </div>
+            <p class="error-message" id="hexadecimalError"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

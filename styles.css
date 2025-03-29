@@ -38,6 +38,41 @@ h1 {
     align-items: center;
 }
 
+/* Style for input and button to be side by side */
+.input {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between input and button */
+    width: 100%;
+}
+
+/* Make input take most of the space */
+.input input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background: #222;
+    color: white;
+    font-size: 16px;
+}
+
+/* Style for button */
+.input button {
+    padding: 10px 15px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.input button:hover {
+    background: #0056b3;
+}
+
+
 /* Input box styling */
 input {
     width: 80%;

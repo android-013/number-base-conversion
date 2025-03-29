@@ -18,3 +18,12 @@ function convertCustomBase() {
         convertedNumberField.value = "Error";
     }
 }
+
+function copyText(elementId) {
+    let inputField = document.getElementById(elementId);
+    inputField.select();
+    inputField.setSelectionRange(0, 99999); // For mobile devices
+    navigator.clipboard.writeText(inputField.value).then(() => {
+        alert("Copied to clipboard: " + inputField.value);
+    }).catch(err => console.error("Error copying text:", err));
+}

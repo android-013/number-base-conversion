@@ -26,9 +26,13 @@
                 <label for="converted-number">Converted Number</label>
                 <input type="text" id="converted-number" readonly>
             </div>
-            <button onclick="convertCustomBase()">Convert</button>
+            <div class="copy-container">
+                <button onclick="copyText('converted-number')">Copy</button>
+                <button onclick="convertCustomBase()">Convert</button>
+            </div>
+            
         </div>
-        <a href="index.html" class="custom-button">Go to standard Base</a>
+        <a href="index.html" class="custom-button">Go to Standard Base</a>
     </div>
     <script src="custom-script.js"></script>
 </body>
